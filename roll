@@ -1,0 +1,70 @@
+#!/usr/bin/env python3
+import colors as c
+import random as r
+
+die = [None]
+
+die.append('''
+ -------
+|       | 
+|   .   | 
+|       |
+ -------
+''')
+
+die.append('''
+ -------
+| .     | 
+|       | 
+|     . |
+ -------
+''')
+
+die.append('''
+ -------
+|   .   | 
+|   .   | 
+|   .   |
+ -------
+''')
+
+die.append('''
+ -------
+| .   . | 
+|       | 
+| .   . |
+ -------
+''')
+
+die.append('''
+ -------
+| .   . | 
+|   .   | 
+| .   . |
+ -------
+''')
+
+die.append('''
+ -------
+| .   . | 
+| .   . | 
+| .   . |
+ -------
+''')
+
+print(c.clear)
+while True:
+    how_many = input('How Many? ').strip().lower()
+    print(c.clear)
+    if not how_many:
+        how_many = last_how_many
+    elif how_many == 'goodbye':
+        exit()
+    else:
+        how_many = int(how_many)
+        last_how_many = how_many
+    for count in range(how_many):
+        rand_num = r.randint(1,6)
+        print(c.random() + " " + die[rand_num].strip() + c.reset)
+        input(c.base0 + "Next? " + c.reset)
+        print(c.clear)

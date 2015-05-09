@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+
+import colors as c
+import time
+
+for verse in range(3):
+  for count in range(12)
+    print(c.red + str(count) + " BlcokcMc Crew..")
+    time.sleep(0.37)
+  for count in count range(3):
+    print(c.yellow + str(count) + " markmuchane 
+      CoderPythonX 
+      The_Iron_Helmet_
+      garrett123456712
+      robmuh"
+

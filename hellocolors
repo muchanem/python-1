@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+
+red = '\033[0;31m'
+yellow = '\033[0;33m'
+reset = '\033[0m'
+
+print(red + "hello" + reset + 'there' + yellow+'World')
+
