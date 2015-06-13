@@ -1,26 +1,58 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
-name = input("What is your name? ")
-if name == "Mark":
-   print("c.green +  Coorect" + c.reset)
+import colors as c
+def live():
+    print("You may pass")
+
+def die():
+    print("You have been cast into the Gourge of Eternal Peril")
+
+def person_die():
+    print("The Bridge Keeper has been cast into the Gourge of Eternal Peril")
+
+def ask(question):
+    print(c.red + question + c.reset)
+    answer = input("> " + c.base3).lower().strip()
+    print(c.reset)
+    return answer
+    
+
+agree_0 = input("Who would cross the Bridge Of Death must aswer me these questions three 'Ere the other side you see Will you answer Me these questions three:")
+
+if agree_0 == "yes":
+    name_0 = ask("what is your name?")
+    quest_0 = ask("what is your quest?")
+
+    if name_0 == "sir lancelot":
+        color_0 = ask("what is your favorite color?")
+        if color_0 == "blue":
+            live()
+        else:
+            die()
+    elif name_0 == "sir robin":
+        capital_0 = ask("What is the capital of Assyria?")
+        if capital_0 == "assur":
+            live()
+        else:
+            die()
+    elif name_0 == "sir galahad":
+        color_0 = ask("What is your favorite color?")
+        if color == "yellow":
+            live()
+        else:
+            die()
+    elif name_0 == "king arthur":
+        swallow_0 = ask("what is the airspeed velocity of an unladeN SWALLOW?")
+        if swallow_0 == "24 miles an hour":
+            live()
+            person_die()
+        elif swallow_0 == "what do you mean, an african or european swallow?":
+            live()
+            person_die()
+        else:
+            die()
+    else:
+        print("You may need to Spell or Capitalize your letters like this:Sir Lancelot")
 else:
-    print("coorect") 
-quest = input("What is your quest? ")
-
-
-color = input("What is your favorite color? ")
-
-capital of acedia = input("What is the capital of Acidea? ")
-
-asped volicity of a unlegged swallow = ("what is the asped volicity of a unlegged swallow? ")
-if asped volicity of a unlegged swallow == ("European or African")
-	print("I do not know that ahhh") 
-else: 
-	print(' c.red + Incorrect + c.reset')
-
-print("You answered")
-print("Your name is  {}".format(name))
-print("Your quest is {}".format(quest))
-print("Your color is {}".format(color))
-
+    ask("You need to type yes to start the program.")
 
