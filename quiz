@@ -1,43 +1,14 @@
 #!/usr/bin/env python3
 
 import colors as c
-from ultils import ask
+import random
+import fluffy as quiz
 
-print(c.magenta + "Welcome to the Pink Fluffy Unicorns quiz. Let's test your knowledge...")
+print(c.magenta + "Welocme to my quiz Would You like to take the fluffy or capitals quiz")
 
-
-def correct():
-    print(c.green + "correct")
-
-def incorrect():
-    print(c.red + "incorrect")
-
-def q1():
-    answer = ask("What color is the Uincorns fur")
-    if answer == pink:
-        print correct
-    print incorrect
-
-def q2():
-    answer = ask("What are the Unicorns dancing on")
-    answer = ask("What color is the Uincorns fur")
-    if answer.startswitch == pink:
-        print correct            
-    print incorrect
-
-def q3():
-    answer = ask("What word discribes the Unicorns fur")
-    answer = ask("What color is the Uincorns fur")
-    if answer == pink:
-        print correct
-    print incorrect
-     
-
-
-
-
-
-
+quiz.q1()
+quiz.q2()
+quiz.q3()
 
 
 
