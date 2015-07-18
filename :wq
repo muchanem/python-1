@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+
+import colors as c
+from ultils import ask
+
+text = '''Story Of War
+
+
+It was during the battle of {Noun} when I was running through a {Noun1} when a {Noun2} went off right next to my platoon. 
+Our {Job} yelled for us to {Verb} to the nearest {Place} we could find. 
+When we got to the {Place} we {Veb Ending In "ED"} to start a fire. 
+As we were starting the fire the enemy saw the {Noun3} from the fire and started {Veb Ending In "ING"} {Noun(Plural)} at us. 
+We all quickly ducked behind the {Noun5} at the {Place} and returned fire. 
+We quickly eliminated the enemy and were {Emotion} that we had won the battle.
+'''
+
+lines = text.splitlines()
+title = line[0]
+text = "\n".join(lines[1:])
+
+print(c.clear + c.base3 + title + c.reset)
+
+
