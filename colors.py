@@ -2,6 +2,7 @@
 
 '''
 
+import random as r
 
 base01 = '\033[1;32m'
 base00 = '\033[1;33m'
