@@ -32,7 +32,27 @@ answers = [
     'Very doubtful.'
 ]
 
-while True:
+def bye():
+    print()
+    print('Fine. Bye.')
+    exit()
+
+def handle_question():
     question = input('--> ' + c.yellow)
+    if question == 'bye' or question == 'goodbye':
+        bye()
+    elif 'love' in question:
+        print(c.random_color() + 'Do I look like Cupid to you?' + c.reset)
+    elif 'die' in question or 'death' in question or 'dead' in question:
+        print(c.random_color() + "Such grim questions don't deserve an answer, yet." + c.reset)
+    else:
         answer = random.choice(answers)
         print(c.random_color() + answer + c.reset)
+
+while True:
+    try:
+        handle_question()
+    except KeyboardInterrupt:
+        bye()
+    except EOFError:
+        print(c.reset)
